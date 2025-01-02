@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller devices */
+    .navbar-brand img {
+        width: 80px; /* Reduce logo size */
+    }
+
+    .navbar-nav {
+        margin-inline: 0; /* Remove auto margin for better alignment */
+    }
+
+    .hero {
+        margin-top: 50px;
+        padding: 50px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .hero-content {
+        width: 95%; /* Increase width for better readability */
+    }
+
+    .product-item {
+        width: 90%; /* Make product items take more width */
+    }
+
+    .contact-form {
+        padding: 1em; /* Reduce padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+    .navbar-brand img {
+        width: 60px; /* Further reduce logo size */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9em; /* Reduce font size for nav links */
+    }
+
+    .hero {
+        padding: 30px 5px; /* Further reduce padding */
+    }
+
+    .hero-content {
+        width: 100%; /* Full width for better readability */
+    }
+
+    .product-item {
+        width: 100%; /* Full width for product items */
+    }
+
+    .contact-form {
+        padding: 0.5em; /* Further reduce padding */
+    }
+
+    .social-icons a {
+        font-size: 1.2em; /* Reduce icon size */
+        
+    }
+}
