@@ -152,7 +152,7 @@ body {
 }
 
 
-.hero-content span {
+span {
   color: #a7821c;
 }
 
@@ -184,9 +184,9 @@ body {
 /* من نحن  */
 .about-us {
   padding: 50px 20px;
-  background: linear-gradient(to bottom right, #e7e8ea, #f8f9fa);
+  background-color: #d7a21044;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #aa821395;
   margin-top: 30px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
