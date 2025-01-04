@@ -54,7 +54,7 @@ body {
 }
 
 .container {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 
 .hero {
@@ -73,14 +73,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #e7e8ea;
-
 }
 
 @media screen and (max-width: 807px) {
   .image {
     background: url("../Image/13.jpg");
     background-size: 160%;
-    background-position:   center  center ;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #e7e8ea;
@@ -96,6 +95,7 @@ body {
   margin-inline: auto;
 }
 
+/* المنتجات */
 .products {
   margin-top: 3em;
 }
@@ -127,8 +127,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.products h2 {
-  margin-bottom: 1em;
+.products h4 {
+  margin-top: 1em;
   color: #a7821c;
 }
 
@@ -136,18 +136,27 @@ body {
   width: 100%;
   height: 500px;
   border-radius: 10px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.703);
+}
+/* التأثير عند التمرير */
+.product-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: brightness(110%);
 }
 
 .product-category {
   margin-bottom: 2em;
 }
 
+
 .hero-content span {
   color: #a7821c;
 }
 
 /* Contact */
-
 .con-cont {
   margin-top: 50px;
 }
@@ -170,4 +179,103 @@ body {
 }
 .contact-details {
   margin-top: 2em;
+}
+
+/* من نحن  */
+.about-us {
+  padding: 50px 20px;
+  background: linear-gradient(to bottom right, #e7e8ea, #f8f9fa);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-us h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #496280;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-us p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+
+/* فريق العمل  */
+.team {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.text-team {
+  text-align: center;
+  color: #a7821c;
+}
+
+.team-member {
+  flex: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.team-member h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.team-member p {
+  font-size: 1em;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .team-member {
+    flex: 100%;
+  }
+}
+
+/* البار السوفلي  */
+.social-border {
+  border-top: 2px solid #496280;
+  background-color: #e7e8ea;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-border .social-icons {
+  margin-top: 10px;
+}
+
+.social-border .social-icons a {
+  margin: 0 10px;
+  color: #000;
+  font-size: 30px;
+}
+
+.social-border .social-icons a:hover {
+  color: #a7821c;
+}
+
+.text-center {
+  color: #a7821c;
+  margin-bottom: 0; /* أضف هذا لتقليل المسافة تحت العنوان */
 }
